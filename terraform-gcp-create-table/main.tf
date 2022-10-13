@@ -1,10 +1,10 @@
-resource "google_bigquery_table" "PROMOCION_CLIENTES_ESPEJO_AC" {
+resource "google_bigquery_table" "create_table" {
 	dataset_id = var.dataset
-	table_id = "PROMOCION_CLIENTES_ESPEJO_AC"
+	table_id = var.table
 
 	time_partitioning {
-		type = "DAY"
+		type = var.time_partitioning
 	}
-
-	schema = file("schemas/PROMOCION_CLIENTES_ESPEJO_AC.json")
+	schema = file(var.path_schema_file)
+	labels = var.labels
 }

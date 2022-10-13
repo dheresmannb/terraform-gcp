@@ -1,8 +1,5 @@
-variable "dataset" {}
+variable "name" {}
 variable "location" {}
-variable "desc" {}
-variable "region" {}
-variable "zone" {}
 variable "project_id" {}
 variable "labels" {
   default = {}
