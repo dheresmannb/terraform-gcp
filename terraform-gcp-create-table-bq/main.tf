@@ -1,4 +1,4 @@
-resource "google_bigquery_table" "create_table" {
+resource "google_bigquery_table" "create_table_bq" {
 	dataset_id = var.dataset
 	table_id = var.table
 
