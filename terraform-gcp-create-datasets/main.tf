@@ -1,4 +1,4 @@
-resource "google_bigquery_dataset" "create_dataset" {
+resource "google_bigquery_dataset" "create_dataset_bq" {
   dataset_id    = var.dataset
   friendly_name = var.dataset
   description   = var.desc
