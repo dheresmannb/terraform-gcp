@@ -7,4 +7,5 @@ resource "google_bigquery_table" "create_table_bq" {
 	}
 	schema = file(var.path_schema_file)
 	labels = var.labels
+	deletion_protection = var.deletion_protection
 }
